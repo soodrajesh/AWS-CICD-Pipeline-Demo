@@ -1,41 +1,23 @@
-variable "aws_profile" {
-  description = "AWS CLI profile name to use for authentication"
+variable "aws_region" {
+  description = "AWS region for resources"
   type        = string
-  default     = "rsood"
+  default     = "us-east-1"
 }
 
-variable "region" {
-  type = string
-  default = "us-west-2"  
+variable "project_name" {
+  description = "Name of the project"
+  type        = string
+  default     = "aws-cicd-demo"
 }
 
-variable "ami-name" {
-  type = string
-  default = "ami-002c2b8d1f5b1eb47"  
+variable "ami_id" {
+  description = "AMI ID for the EC2 instance"
+  type        = string
+  default     = "ami-0c55b159cbfafe1f0" # Update with a valid AMI for your region
 }
 
-variable "instance-size" {
-  type = string
-  default = "t2.micro"
+variable "ec2_key_pair" {
+  description = "Name of the EC2 key pair for SSH access"
+  type        = string
+  default     = "" # Replace with your key pair name
 }
-
-variable "private-subnet1" {
-  type = string
-  default = "subnet-049ac40c7fa73e691"
-}
-
-variable "key-pair" {
-  type = string
-  default = "rsood-myawsacc"
-}
-
-variable "security-group" {
-  type = string
-  default = "sg-020a0f0701a3be22e"
-}
-
-variable "ec2-role" {
-  type = string
-  default = "demo-EC2InstanceProfile-jck8w4bDxoV2"
-}
-

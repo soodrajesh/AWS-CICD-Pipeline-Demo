@@ -1,0 +1,14 @@
+{
+  "name": "aws-cicd-pipeline-demo",
+  "version": "1.0.0",
+  "description": "A demo Node.js app for AWS CI/CD pipeline",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "author": "soodrajesh",
+  "license": "MIT"
+}
